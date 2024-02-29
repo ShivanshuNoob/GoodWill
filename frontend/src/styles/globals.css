@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: jost;
+  src: url("../../public/Jost-VariableFont_wght.ttf");
+}
+* {
+  font-family: jost;
+}
+.nav-link.active {
+  color: rgb(18 211 104 / 84%) !important;
+  border-bottom: 3px solid rgb(18 211 104 / 84%);
+}
+
+.donation-bg {
+  background: url("/Images/hp3-donate-bg-2.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.happening-bg {
+  background: url("/Images/hp3-blog-bg.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.ourTeam-bg {
+  background: url("/Images/hp3-personnel-bg.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.slick-list {
+  max-height: 510px !important;
+}
+
+.slick-slide {
+  min-width: 384px !important;
+  width: 100%;
+  @apply sm:mx-10;
+}
+@media (max-width: 640px) {
+  .slick-slide {
+    margin-inline: 20px !important;
+  }
+}
+@media (max-width: 500px) {
+  .slick-slide {
+    margin-inline: 0px !important;
+  }
+}
+
+.MuiInputBase-root {
+  border-radius: 0 !important;
+}
+.toast-login {
+  @apply mt-10;
+}
